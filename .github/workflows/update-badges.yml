@@ -11,5 +11,5 @@ jobs:
           sed -i 's|PGE383-HPC-Students/assignment1|{{ $GITHUB_REPOSITORY }}|g' README.md
       - name: Autocommit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: Update badge URL path
+        with:
+          commit_message: Update badge URL path
