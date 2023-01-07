@@ -1,6 +1,6 @@
 on: create
 jobs:
-  update-badges:
+  update badges:
     name: "Update badge URL paths"
     runs-on: "ubuntu-latest"
       steps:
