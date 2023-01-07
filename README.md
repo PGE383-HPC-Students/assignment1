@@ -1,3 +1,5 @@
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=master&repo=116716903)
+
 # Assignment 1
 
 ![Assignment 1](https://github.com/PGE383-HPC-Students/assignment1/workflows/.github/workflows/main.yml/badge.svg)
