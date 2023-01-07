@@ -1,5 +1,5 @@
 name: Update Badges
-on: fork
+on: create
 jobs:
   update-badges:
     steps:
