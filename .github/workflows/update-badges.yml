@@ -1,16 +1,16 @@
 on: create
 jobs:
-  test:
-    name: "Update badge URL paths"
+  update-badges:
     runs-on: "ubuntu-latest"
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v3
-        - name: Update README
-          shell: bash -l {0}
-          run: |
-            sed -i 's|PGE383-HPC-Students/assignment1|{{ $GITHUB_REPOSITORY }}|g' README.md
-        - name: Autocommit Changes
-          uses: stefanzweifel/git-auto-commit-action@v4
-          with:
-            commit_message: "Update badge URL paths"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Update README
+        shell: bash -l {0}
+        run: |
+          sed -i 's|PGE383-HPC-Students/assignment1|{{ $GITHUB_REPOSITORY }}|g' README.md
+      - name: Autocommit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update badge URL paths"
+
