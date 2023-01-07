@@ -8,7 +8,7 @@ jobs:
       - name: Update README
         shell: bash -l {0}
         run: |
-          sed -i 's|PGE383-HPC-Students/assignment1|{{ $GITHUB_REPOSITORY }}|g' README.md
+          sed -i "s|PGE383-HPC-Students/assignment1|$GITHUB_REPOSITORY|g" README.md
       - name: Autocommit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
