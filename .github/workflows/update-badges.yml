@@ -1,7 +1,7 @@
-name: Update Badges
 on: create
 jobs:
   update-badges:
+  runs-on: "ubuntu-latest"
     steps:
       - name: Checkout
         uses: actions/checkout@v3
